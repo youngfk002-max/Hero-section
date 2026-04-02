@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fun Fact of the Day</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+    #fact { font-size: 1.5em; margin: 20px; color: #333; }
+  </style>
+</head>
+<body>
+  <h1>Welcome! 🎉</h1>
+  <p id="fact"></p>
+
+  <script>
+    const facts = [
+      "Sharks existed before trees.",
+      "Bananas are berries, but strawberries aren’t.",
+      "Octopuses have three hearts.",
+      "Honey never spoils.",
+      "A day on Venus is longer than a year on Venus."
+    ];
+
+    // Pick a random fact when the page loads
+    const randomIndex = Math.floor(Math.random() * facts.length);
+    document.getElementById("fact").innerText = facts[randomIndex];
+  </script>
+</body>
+</html>
